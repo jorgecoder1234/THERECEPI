@@ -39,16 +39,71 @@
 
 <body>
 
+  <nav class="navbar navbar-inverse" id="thenav">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">SuperRecipe</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li data-toggle="modal" data-target="#exampleModal"> Help</li>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+              <ul class="collapsible black-text" data-collapsible="accordion">
+                <li>
+                  <div class="collapsible-header">How to use the App?</div>
+                  <div class="collapsible-body">
+                    <span>You have to add your ingredients using the "add ingredinet" button once finished, you will
+                      see the first 10 recipes"</span>
+                </li>
+                <br>
+                <li>
+                    <div class="collapsible-header">Can I see more than 10 Recipes?</div>
+                    <div class="collapsible-body">
+                      <span>Yes, it is possible, using the "load-more button"</span>
+                  </li>
+                  <br>
+                  <li>
+                      <div class="collapsible-header">Who build the app?</div>
+                      <div class="collapsible-body">
+                        <span>Group of students of the Tec Bootcamp</span>
+                    </li>
+
+
+            </div>
+
+
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+    </div>
+
+    </ul>
+
+    </div>
+  </nav>
+
+
   <!-- Main Bootstrap Search -->
   <div class="container">
 
     <!-- Jumbotron for Title -->
-    <div class="jumbotron" style="background-color: #20315A ; color: white;">
-      <h1 class="text-center">
-        <strong>
-          <i class="material-icons"></i>Recepi Search</strong>
-      </h1>
-    </div>
+
 
     <!-- Row for the ingredients added -->
     <div class="row" id="ingredients">
@@ -76,9 +131,9 @@
               <!-- Here the search button -->
               <button type="submit" class="btn btn-default" id="run-search">
                 <i class="fa fa-search"></i> Search</button>
-              <button class="btn btn-default" id="clear-all">
+              <button class="btn btn-default " id="clear-all">
                 <i class="fa fa-trash"></i> Clear Results</button>
-              <input id="add-ingredient" type="submit" value="Add Ingredient" class="btn btn-info">
+              <input id="add-ingredient" type="submit" value="Add Ingredient" class="btn btn-default btncolor">
             </form>
           </div>
         </div>
@@ -109,7 +164,7 @@
 
 
     <div class="row" id="nuevaresultsection">
-      <div class="col s12 loggedin-content">
+      <div class="col s12 ">
         <div id="recipe-list" class="section">
           <div id="recipe1" class="col l4 m6 s12">
           </div>
@@ -121,15 +176,12 @@
       </div>
     </div>
 
-    <button class="btn waves-effect waves-light col s4" type="submit" style="display:none; margin-bottom:10px;float:right"
+    <button class="btn waves-effect waves-light col s4" type="submit" style="display:none"
       name="action" id="load-more">Load More</button>
 
 
-    
-    <div id="text2">
 
 
-    </div>
 
     <div class="row" id="howto">
       <div class="col-sm-12">
@@ -141,7 +193,7 @@
           <!-- card Heading for the retrieved articles box -->
           <div class="card-header">
             <strong>
-              <i class="fa fa-table"></i> howto</strong>
+              <i class="fa fa-table"></i> New York Times Related Articles</strong>
           </div>
 
           <!-- This main card will hold each of the resulting articles -->
@@ -150,7 +202,9 @@
 
 
           </div>
+
         </div>
+
       </div>
     </div>
 
@@ -158,21 +212,118 @@
   </div>
 
 
+  <br>
 
 
 
 
 
+  <footer class="page-footer font-small  pt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <!-- Content -->
+          <h5 class="text-uppercase">Super Recipe</h5>
+          <p>Discover your new favorite meal with a couple clicks</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+          <!-- Links -->
+          <h5 class="text-uppercase" data-toggle="modal" data-target="#exampleModal2">About</h5>
+
+          <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+
+                  <ul class="collapsible black-text" data-collapsible="accordion">
+                      <li>
+                        <div class="collapsible-header">About the App</div>
+                        <div class="collapsible-body">
+                          <span>
+                              Discover your new favorite meal with a couple clicks
+                          </span>
+                      </li>
+                  <ul>
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel2">SUPER RECIPE 2018</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+               
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
 
 
 
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Produced By</a>
+            </li>
+            <li>
+              <a href="#!">Maria Fernada Enriquez</a>
+            </li>
+            <li>
+              <a href="#!">Walter Alamada</a>
+            </li>
+            <li>
+              <a href="#!">Jorge Castellanos</a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
 
 
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+
+
+
+  <!--
   <footer>
     <div class="thefooter">
       Copyright &copy;
     </div>
   </footer>
+
+-->
+
+
 
   <!-- jQuery JS -->
 
